@@ -27,6 +27,12 @@ node consumer // to run the MQ consumer
 
 ### Api info
 
+#### API authentication
+
+We are using API-KEY to authenticate the apis and restricting access to unwanted users,
+without the valid Api key passed in the headder the api will return 403 unauthorized as response.
+Please find the valid API-KEY in the .env file.
+
 #### method: post 
 
 create new users: http://localhost:3000/users/create 
