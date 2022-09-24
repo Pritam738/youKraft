@@ -84,3 +84,31 @@ recivers
 |  4 | 2          | 2          | 2022-09-24 14:49:56 | 2022-09-24 14:49:56 |
 +----+------------+------------+---------------------+---------------------+
 ```
+
+## Problem statement
+### Write an api for messaging between users
+1. Get one/all users
+2. Create message
+3. Send message to user (Adding a message to an MQ)
+4. Get all sent messages by user
+5. Get all received messages by user
+
+### Message Fields
+* Text
+* Date (Date and time at which the message was sent)
+* IsSent 
+* From User
+* To User
+
+### Tasks:
+* Please add authentication and all routes should be restricted. 
+* Use any MQ to send messages
+* Use sqlite or any other preferred database. 
+* Add proper folder structure.
+* Use best coding practices.
+* Make assumptions whenever necessary.
+
+## Assumption made
+* I am not sending date in the message body as during DB insertion created at field is automatickly created in the DB
+* I am not seding IsSent flag.
+* Their is a single api to create message and send message to users.
