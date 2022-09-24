@@ -12,7 +12,7 @@ Node.js should be installed and running locally.
 
 docker-compose up // this will start the rabbitMq and mysql
  
-check if the queue conslose is available on http://localhost:15673/
+check if the queue conslose is available on http://localhost:15673/ username: guest password: guest
 
 ### Installing
 
