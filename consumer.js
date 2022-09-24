@@ -3,7 +3,7 @@ const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5673';
 const MessageController = require('./controllers/message')
 
 async function processMessage(msg) {
-  MessageController.create(JSON.parse(msg.content.toString()));
+  await MessageController.create(JSON.parse(msg.content.toString()));
 }
 
 (async () => {
